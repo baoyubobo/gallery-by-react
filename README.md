@@ -1,6 +1,6 @@
 ![](https://cloud.githubusercontent.com/assets/8199343/21839217/816ed572-d811-11e6-8126-c6ab66d0d9aa.png)
 
-一个React构建的图片画廊应用,在线访问：[https://ckinmind.github.io/gallery-by-react/](https://ckinmind.github.io/gallery-by-react/)
+一个React构建的图片画廊应用,在线访问：[https://baoyubobo.github.io/gallery-by-react/](https://baoyubobo.github.io/gallery-by-react/)
 
 ## 项目说明
 - 本项目是对着视频教程编写的（非原创），教程地址 [React实战--打造画廊应用](http://www.imooc.com/learn/507)
@@ -32,6 +32,12 @@ clone到本地
 ```
 > npm run dist
 ```
+
+运行dist文件
+```
+> npm run serve:dist
+```
+
 更多命令请参考 **package.json** 文件, 从头构建项目可以参考视频教程
 
 ## 目录说明
@@ -145,5 +151,10 @@ git branch -D gh-pages
 # 使用git的subtree将已有项目的某个目录分离成独立项目
 # 并推送到分支 gh-pages
 # prefix指定本地推送的目录
+git add dist 
+
+git commit -m "publish project to github-pages" 
+
 git subtree push --prefix=dist origin gh-pages
+
 ```
